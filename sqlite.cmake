@@ -11,3 +11,6 @@ if(${AZI_STATIC_LIBS})
 else(${AZI_STATIC_LIBS})
   set(Sqlite_LIBRARIES debug ${SQLITE_LIB_DEBUG}/sqlite3d_${_suffix}.lib debug ${SQLITE_LIB_DEBUG}/CppSQLite3.lib optimized ${SQLITE_LIB_RELEASE}/sqlite3${_suffix}.lib optimized ${SQLITE_LIB_RELEASE}/CppSQLite3.lib)
 endif(${AZI_STATIC_LIBS})
+
+macro(AziSqlite)
+endmacro(AziSqlite)
